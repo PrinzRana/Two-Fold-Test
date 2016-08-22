@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class test32 {
+public class RealFold {
 	
 	static int numberOfDataItems = 5620;
 	static int halfnumberOfDataItems = 2810;
@@ -110,14 +110,15 @@ public static void processLine( String line, int offset){
     			boolean correct = categorize(testelement, 0, numberOfDataItems);
     			if(correct)
     				counter2++;
-    		}
-    		 
+    		} 
     		
     		double complete = percentage1 + percentage2;
+    		// first and the second half were added together and divided by 2
 			double averagepercentage = complete/2;
+			// to find out the average percentage, 
+			
     			System.out.println("Full Data Percentage	:		" + averagepercentage );
-    			
-    			
+    				
     		}
     	
     	//function readData
